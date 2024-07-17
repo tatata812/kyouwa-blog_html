@@ -27,9 +27,9 @@ header
   z-index: 999;
   top: 0;
   width: 100%;
-  
-  @include tab{
-    
+
+  @include tab {
+
     position: fixed;
   }
 }
@@ -244,7 +244,7 @@ header
 .search-section {
   padding: 60px 16px;
 
-  @include sp{
+  @include sp {
     padding: 40px 16px;
   }
 
@@ -286,14 +286,13 @@ header
 
     button {
       border: #3e83c5 1px solid;
-border-radius: 6px;
+      border-radius: 6px;
       position: relative;
       width: 80px;
 
-&:hover {
-  opacity: 0.6;
-}
-
+      &:hover {
+        opacity: 0.6;
+      }
 
     }
   }
@@ -353,7 +352,7 @@ border-radius: 6px;
   padding: 80px 16px;
   background-color: #ecf6f6;
 
-  @include sp{
+  @include sp {
     padding: 40px 16px;
   }
 
@@ -370,7 +369,7 @@ border-radius: 6px;
     margin: 0 0 60px;
     font-weight: 500;
 
-    @include sp{
+    @include sp {
       font-size: 20px;
       margin: 0 0 40px;
     }
@@ -383,19 +382,19 @@ border-radius: 6px;
 記事
  ================================= */
 
- .article-wrap {
+.article-wrap {
   display: flex;
   gap: 40px;
   flex-wrap: wrap;
   justify-content: flex-start;
-  
-  @include pc{
+
+  @include pc {
     gap: 16px;
   }
-  
-  @include sp{
+
+  @include sp {
     justify-content: center;
-  gap: 40px;
+    gap: 40px;
   }
 
 
@@ -403,26 +402,33 @@ border-radius: 6px;
     width: calc((100% - 80px) / 3);
     margin: 0 0 40px;
 
-    @include pc{
+    @include pc {
       width: calc((100% - 32px) / 3);
     }
 
-    @include sp{
-    width: 100%;
-    max-width: 400px;
+    @include sp {
+      width: 100%;
+      max-width: 400px;
     }
 
     &--most {
       margin: 0;
     }
+
+    &:hover .article-wrap__img img {
+      transform: scale(1.1);
+    }
   }
 
   &__img {
     margin: 0 0 12px;
+    overflow: hidden;
 
     img {
       aspect-ratio: 20 / 13;
-    object-fit: cover;
+      object-fit: cover;
+      transform: scale(1);
+    transition: 0.3s ease-in-out;
     }
   }
 
@@ -437,8 +443,8 @@ border-radius: 6px;
 
   &__ttl {
     padding: 0 4px;
-color: #002e73;
-line-height: 1.5;
+    color: #002e73;
+    line-height: 1.5;
   }
 
   &__ {}
@@ -474,11 +480,11 @@ line-height: 1.5;
 TOPメイン
  ================================= */
 
- .top-main {
+.top-main {
 
   padding: 80px 16px;
 
-  @include sp{
+  @include sp {
     padding: 40px 16px;
   }
 
@@ -533,11 +539,11 @@ TOPメイン
 記事
  ================================= */
 
- .single-main {
+.single-main {
 
   padding: 80px 16px;
 
-  @include sp{
+  @include sp {
     padding: 40px 16px;
   }
 
@@ -556,7 +562,7 @@ TOPメイン
     border-bottom: #c9e5ff 4px solid;
     margin: 0 0 18px;
 
-    @include sp{
+    @include sp {
       font-size: 20px;
 
     }
@@ -629,7 +635,7 @@ TOPメイン
 
  ================================= */
 
- .aaa {
+.aaa {
 
   &__ {}
 
@@ -672,7 +678,7 @@ TOPメイン
 
  ================================= */
 
- .aaa {
+.aaa {
 
   &__ {}
 
@@ -715,7 +721,7 @@ TOPメイン
 
  ================================= */
 
- .aaa {
+.aaa {
 
   &__ {}
 
@@ -808,6 +814,7 @@ footer
 
   &__logo {
     max-width: 420px;
+
     @include pc {
       margin: 0 0 16px 0;
     }
@@ -816,7 +823,7 @@ footer
 
 .footer-bottom {
   margin: 0 0 40px;
-  
+
   &__inner {
     display: flex;
     max-width: 1080px;
@@ -824,12 +831,12 @@ footer
     padding: 0 8px;
     align-items: flex-end;
 
-    @include pc{
-    gap: 16px;
+    @include pc {
+      gap: 16px;
     }
 
-    @include tab{
-    position: relative;
+    @include tab {
+      position: relative;
     }
 
 
@@ -876,18 +883,18 @@ footer
     width: 60px;
     margin-bottom: -20px;
 
-    @include tab{
+    @include tab {
       width: 40px;
-    position: absolute;
-    bottom: 64px;
-    right: 44px;
+      position: absolute;
+      bottom: 64px;
+      right: 44px;
     }
 
-    @include sp{
+    @include sp {
       bottom: 14px;
       right: 22px;
     }
-    }
+  }
 }
 
 
@@ -899,4 +906,3 @@ footer
   padding: 12px 8px;
   font-size: 12px;
 }
-

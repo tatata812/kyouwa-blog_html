@@ -451,13 +451,19 @@ header
 .article-wrap__item--most {
   margin: 0;
 }
+.article-wrap__item:hover .article-wrap__img img {
+  transform: scale(1.1);
+}
 .article-wrap__img {
   margin: 0 0 12px;
+  overflow: hidden;
 }
 .article-wrap__img img {
   aspect-ratio: 20/13;
   -o-object-fit: cover;
      object-fit: cover;
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
 }
 .article-wrap__flex {
   display: flex;

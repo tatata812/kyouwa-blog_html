@@ -16,6 +16,29 @@
   }
 }
 
+
+input {
+	margin: 0;
+	padding: 0;
+	background: none;
+	border: none;
+	border-radius: 0;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -70,6 +93,15 @@ li {
     display: block;
   }
 }
+
+.main {
+  height: 1000px;
+  margin: 58px 0 0;
+}
+
+
+
+
 
 .blue {
   color: #0071bc;
